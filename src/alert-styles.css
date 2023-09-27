@@ -1,0 +1,11 @@
+.react-alert .alert {
+    background-color: lightblue;
+    border: 1px solid blue;
+    color: black;
+  }
+  
+  /* Customize the close button */
+  .react-alert .alert button[aria-label="close"] {
+    /* Add your styles here */
+  }
+  

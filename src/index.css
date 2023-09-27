@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-height {
+    height: 640px;
+  }
+  .custom-heights {
+    height: 325px;
+  }
+  .custom-height-hero{
+    height: 411px;
+  }
+  
+  /* TemplateComponent.css */
+.template-card {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  /* padding: 1rem; */
+  width: 240px;
+  height: 160px;
+  transition: box-shadow 0.2s;
+  overflow: hidden; /* Hide overflow for blur effect */
+}
+
+.template-card.hovered {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.use-button {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  height: auto;
+  
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.template-card.hovered .use-button {
+  opacity: 1;
+}
+.polygon-div {
+  position: relative;
+  width: 520px;
+  height: 250px;
+  background-color:#FFDC7B;
+  border: 3px solid #241a19;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 34% 55%, 0 0);
+  clip-path: polygon(100% 0, 100% 80%, 34% 55%, 0 0);
+  
+}
+.custom-bg{
+  background-color: #5C5046;
+}
+.image-container {
+  position: absolute;
+  top: 40px; /* Adjust the top position as needed */
+  right: 40px;
+  left: 90px; /* Adjust the right position as needed */
+  z-index: 1; /* Push the image under the polygon */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0.5rem; /* Adjust the width as needed */
+  background-color: transparent; /* Set the background color */
+}
+
+.yellow-div {
+  width: 400px;
+  height: 300px;
+  background-color: #FFDC7B; 
+ 
+  clip-path: polygon(14% 73%, 0 85%, 100% 100%);
+}
+
+/* Additional styling for circular loader */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* In your CSS */
+.bg-gradient {
+  background: linear-gradient(135deg, rgba(255, 241, 202, 1), rgba(228, 221, 253, 1), rgba(42,198,198,1), rgba(214, 236, 235, 1));
+}
+
+/* In your CSS */
+.custom-gradient-shadow {
+  background: linear-gradient(135deg, rgba(95, 39, 205, 0.4), rgba(255, 185, 0, 0.4), rgba(189, 10, 106, 0.4), rgba(209, 138, 165, 0));
+  box-shadow: 0 0 20px rgba(95, 39, 205, 0.4);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translatex(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+
+@keyframes ButtonInUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes NameInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes CardInUp {
+  from {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Loginup {
+  from {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Loginform {
+  from {
+    opacity: 0;
+    transform: translateY(-800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes Loginformbutton {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.zoomed-element {
+  transform: scale(0.9); /* Adjust the scale factor as needed */
+  transform-origin: top left; /* Adjust the origin as needed */
+}
+
+
+
+
+
+
+
+
